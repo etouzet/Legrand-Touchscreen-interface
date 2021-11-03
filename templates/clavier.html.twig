@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <input id='test' type="textfield">
-    <code>
-        $('input#example-3').mlKeyboard({
-            layout: 'es_ES'
-        }); 
-    </code>
+    <input id='test' type="text">
+    <div class='code'>
+        <code>
+          $('input#example-1').mlKeyboard({<br/>
+            &nbsp;&nbsp;layout: 'en_US'<br/>
+          });
+        </code>
+      </div>
 {% endblock %}

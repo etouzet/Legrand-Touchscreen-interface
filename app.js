@@ -26,6 +26,11 @@ app.get('/pdf', (req, res) => {
         'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
     })
 })
+
+app.get('/clavier', (req, res) => {
+    res.render('clavier.html.twig')
+})
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })
