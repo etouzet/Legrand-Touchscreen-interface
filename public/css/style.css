@@ -47,24 +47,22 @@ table {
     border-spacing: 0;
 }
 
-/*          Code        */
+/*                 Code                 */
 
 nav{
     background-color: black;
 }
+
 li{
     color : white;
 }
+
 ul{
     display: flex;
     vertical-align: center;
     align-items: center;
 }
 
-
-h1{
-    color: aqua;
-}
 #pdf{
     width: 50px;
 }
