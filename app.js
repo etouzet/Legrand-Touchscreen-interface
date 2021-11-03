@@ -1,3 +1,4 @@
+const fs = require('fs');
 const express = require('express')
 const twig = require("twig");
 const app = express()
@@ -12,6 +13,7 @@ app
     //.engine('html', twig.__express);
 
 
+var data =fs.readFileSync('./public/media/IntroNetKit.pdf','utf8') 
 app.get('/', (req, res) => {
     res.render('test.html.twig', {
         'nom' : "toto",
@@ -22,7 +24,12 @@ app.get('/', (req, res) => {
     })
 })
 
-
+app.get('/pdf', (req, res) => {
+    res.render('pdf.html.twig', {
+        'nom' : "test",
+    })
+})
+     
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
