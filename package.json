@@ -1,0 +1,28 @@
+{
+  "name": "legrand-touchscreen-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaneyo0/Legrand-Touchscreen-interface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaneyo0/Legrand-Touchscreen-interface/issues"
+  },
+  "homepage": "https://github.com/Kaneyo0/Legrand-Touchscreen-interface#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mkdirp": "^1.0.4",
+    "twig": "^1.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
