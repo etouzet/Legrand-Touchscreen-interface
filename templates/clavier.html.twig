@@ -1,14 +1,17 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="css/jquery.ml-keyboard.css">
+{% endblock %}
 {% block javascripts %}
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="jquery.ml-keyboard.js"></script>
-    <script src="demo.js"></script>
+    <script src="/jquery.ml-keyboard.js"></script>
+    <script src="/demo.js"></script>
 {% endblock %}
 {% block body %}
     <input id='test' type="text">
     <div class='code'>
         <code>
-            $('input#test').mlKeyboard({<br/>
+            $('input').mlKeyboard({<br/>
                 &nbsp;&nbsp;layout: 'en_US'<br/>
             });
         </code>
