@@ -49,11 +49,6 @@ table {
 
 /*                 Code                 */
 
-body{
-    width: 1280;
-    height: 1024;
-    margin: auto;
-}
 ul{
     display: flex;
 }
