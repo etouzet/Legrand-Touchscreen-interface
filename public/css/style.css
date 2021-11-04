@@ -49,18 +49,24 @@ table {
 
 /*                 Code                 */
 
-nav{
-    background-color: black;
-}
-
-li{
-    color : white;
-}
-
 ul{
     display: flex;
-    vertical-align: center;
+}
+li :hover{
+    background-color: rgb(30,30,30);
+}
+li{
+    display: flex;
     align-items: center;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(18,18,18);
+    color : white;
+}
+#underline{
+
+    width: 100px;
+    height: 100px;
 }
 
 #pdf{
