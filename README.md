@@ -4,3 +4,4 @@ This is a touchscreen interface, created for Legrand employees, wich allow the u
 
 ## Semaine 1
 Mise en place de l'archtechture MVC avec express et twig
+Début de l'interface de l'acceuil et du base.html
