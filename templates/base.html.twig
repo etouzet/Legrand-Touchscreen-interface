@@ -13,13 +13,24 @@
 <body>
     <nav id="nav-general">
         <ul>
-            {{ dump(app.request.get('_route')) }}
-            {% if not app.request.get('_route') == 'http://localhost:3000' %}{% endif %}
-
-                <li id="icon-home"><i class="material-icons">home</i> </li>
-
-            <li class="onglet-standard"> KB : GH01004AA </li>
+            <li id="icon-home"> <i class="material-icons">home</i> </li>
+            <li class="onglet-standard kb"> KB : GH01004AA </li>
             <li class="onglet-standard"> FDI : GH01004AA </li>
+
+            {% if rout == '/' %}
+                <style>
+                    #icon-home{
+                        background-color: rgb(30,30,30);
+                    }
+                </style>
+            {% elseif rout=='/clavier' %}
+                <style>
+                    .kb{
+                        background-color: rgb(30,30,30);
+                    }
+                </style>
+            {% endif %}
+
         </ul>
     </nav>
 

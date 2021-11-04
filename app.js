@@ -13,7 +13,9 @@ app
     //.engine('html', twig.__express);
     
 app.get('/', (req, res) => {
-    res.render('home.html.twig')
+    res.render('home.html.twig', {
+        rout : req.url
+    })
 })
 
 var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8')
@@ -24,7 +26,9 @@ app.get('/pdf', (req, res) => {
 })
 
 app.get('/clavier', (req, res) => {
-    res.render('clavier.html.twig')
+    res.render('clavier.html.twig', {
+        rout : req.url
+    })
 })
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)

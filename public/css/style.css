@@ -61,7 +61,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(18,18,18);
     color : white;
     height: 80px;
 }
@@ -71,7 +70,5 @@ body{
 #icon-home{
     width: 8%;
 }
-#icon-home:hover{
-    background-color: rgb(30,30,30);
-}
+
 
