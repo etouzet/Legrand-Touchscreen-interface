@@ -7,7 +7,7 @@ $(function(){
 		var $this = $(this),
 			character = $this.html(); // If it's a lowercase letter, nothing happens to this variable
 		
-		// Shift keys
+		/*// Shift keys
 		if ($this.hasClass('left-shift') || $this.hasClass('right-shift')) {
 			$('.letter').toggleClass('uppercase');
 			$('.symbol span').toggle();
@@ -22,7 +22,7 @@ $(function(){
 			$('.letter').toggleClass('uppercase');
 			capslock = true;
 			return false;
-		}
+		}*/
 		
 		// Delete
 		if ($this.hasClass('delete')) {
@@ -32,7 +32,7 @@ $(function(){
 			return false;
 		}
 		
-		// Special characters
+		/*// Special characters
 		if ($this.hasClass('symbol')) character = $('span:visible', $this).html();
 		if ($this.hasClass('space')) character = ' ';
 		if ($this.hasClass('tab')) character = "\t";
@@ -47,7 +47,7 @@ $(function(){
 			if (capslock === false) $('.letter').toggleClass('uppercase');
 			
 			shift = false;
-		}
+		}*/
 		
 		// Add the character
 		$write.html($write.html() + character);
