@@ -56,9 +56,6 @@ table {
 body {
     font: 71%/1.5 Verdana, Sans-Serif;
 }
-#container {
-    
-}
 #write {
     margin: 0 0 5px;
     padding: 5px;
@@ -70,6 +67,7 @@ body {
 }
 #block-keyboard{
     background-color:RGB(30, 30, 30);
+    width : 800px; height: 300px;
 }
 #keyboard {
     margin: 0;
