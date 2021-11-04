@@ -28,6 +28,12 @@ app.get('/pdf', (req, res) => {
     })
 })
 
+
+app.get('/clavier', (req, res) => {
+    res.render('clavier.html.twig')
+})
+
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })

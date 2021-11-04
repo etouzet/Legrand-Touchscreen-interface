@@ -2,19 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    {% block stylesheets %}
-    {% endblock %}
-
-    {% block javascripts %}
-        
-    {% endblock %}
+    <title>Legrand {% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="https://first-link.fr/wp-content/uploads/2020/10/legrand.png">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
 </head>
 <body>
-
     <nav>
         <ul>
             <li> <img src="media/home.png" alt="home"/> </li>
