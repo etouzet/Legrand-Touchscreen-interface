@@ -22,12 +22,21 @@ app.get('/', (req, res) => {
     })
 })
 
-//var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8') 
-//app.get('/pdf', (req, res) => {
-  //  res.render('pdf.html.twig', { 
-    //    'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
-    //})
-//})
+
+var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8') 
+app.get('/pdf', (req, res) => {
+    res.render('pdf.html.twig', { 
+        'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
+    })
+})
+
+
+app.get('/clavier', (req, res) => {
+    res.render('clavier.html.twig')
+})
+
+
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })

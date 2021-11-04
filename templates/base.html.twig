@@ -2,35 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}{% endblock %}</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    {% block stylesheets %}
-    {% endblock %}
-
-    {% block javascripts %}
-        
-    {% endblock %}
+    <title>Legrand {% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/png" href="https://first-link.fr/wp-content/uploads/2020/10/legrand.png">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
 </head>
 <body>
-    <h1> THE hello world </h1>
-    <input id='test' type="textfield">
-    <code>
-        $('input#example-3').mlKeyboard({
-            layout: 'es_ES'
-          }); 
-    </code>
-   
     <nav>
         <ul>
             <li> <img src="media/home.png" alt="home"/> </li>
+            <br id="underline">
             <li> KB : GH01004AA </li>
             <li> FDI : GH01004AA </li>
         </ul>
     </nav>
-    {% block body %}
 
+    {% block body %}
     {% endblock %}
 </body>
 </html>
