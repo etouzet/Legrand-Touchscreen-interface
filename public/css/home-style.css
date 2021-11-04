@@ -1,19 +1,51 @@
+/*        search-bar       */
+
 #search-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding : 20px;
+    background-color: rgb(30,30,30);
+    padding : 1.3%;
 }
 #search-bar>div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin : 0px 50px 0px 50px;
 }
-
 textarea{
     resize: none;
 }
 h2{
     color : white;
+    margin-right: 10px;
+}
+
+/*        navDoc-bar       */
+#navDoc-bar{
+    padding: 1.2% 0% 0% 0.6%;
+}
+#navDoc-bar>ul{
+    display: flex;
+    flex-direction: column;
+}
+.block-nav{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 204, 64);
+    height: 7.8vh;
+    width : 15.3%;
+    border-top: 3px solid rgb(30,30,30);
+    border-right: 3px solid rgb(30,30,30);
+    border-left: 3px solid rgb(30,30,30);
+}
+.lastElement{
+    border-bottom: 3px solid rgb(30,30,30);
+}
+.documentName{
+    padding-left: 2%;
+    width: 90%;
+}
+.nbDocument{
+    padding-left: 7%;
+    padding-right: 1%;
 }
