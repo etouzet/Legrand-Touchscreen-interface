@@ -4,11 +4,6 @@
 }
 body {
     font: 71%/1.5 Verdana, Sans-Serif;
-    background: #eee;
-}
- #container {
-    margin: 100px auto;
-    width: 688px;
 }
 #write {
     margin: 0 0 5px;
@@ -17,13 +12,16 @@ body {
     height: 200px;
     font: 1em/1.5 Verdana, Sans-Serif;
     background: #fff;
-    border: 1px solid #f9f9f9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border: 1px solid blzck;
+}
+#block-keyboard{
+    background-color:RGB(30, 30, 30);
+    width : 800px; height: 300px;
 }
 #keyboard {
     margin: 0;
     padding: 0;
+    background-color: RGB(30, 30, 30);
     list-style: none;
 }
         #keyboard li {
@@ -33,41 +31,15 @@ body {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        background: #fff;
-        border: 1px solid #f9f9f9;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
+        background: RGB(18, 18, 18);
+        color:RGB(255, 204, 64);
+        border: 1px solid RGB(53, 53, 53);
         }
-            .capslock, .tab, .left-shift {
-            clear: left;
+            #keyboard .delete {
+            width: 70px;
             }
-                #keyboard .tab, #keyboard .delete {
-                width: 70px;
-                }
-                #keyboard .capslock {
-                width: 80px;
-                }
-                #keyboard .return {
-                width: 77px;
-                }
-                #keyboard .left-shift {
-                width: 95px;
-                }
-                #keyboard .right-shift {
-                width: 109px;
-                }
             .lastitem {
             margin-right: 0;
-            }
-            .uppercase {
-            text-transform: uppercase;
-            }
-            #keyboard .space {
-            clear: left;
-            width: 681px;
-            }
-            .on {
-            display: none;
             }
             #keyboard li:hover {
             position: relative;
