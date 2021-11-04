@@ -48,12 +48,13 @@ table {
 }
 
 /*               Custom  Code                 */
+body{
+    height: 940px;
+    background-color: rgb(18,18,18);
+}
 
 #nav-general>ul{
     display: flex;
-}
-#icon-home:hover{
-    background-color: rgb(30,30,30);
 }
 
 #nav-general>ul>li{
@@ -65,18 +66,12 @@ table {
     height: 80px;
 }
 .onglet-standard{
-    width: 150px;
+    width: 12%;
 }
 #icon-home{
-    width: 100px;
+    width: 8%;
+}
+#icon-home:hover{
+    background-color: rgb(30,30,30);
 }
 
-#underline{
-
-    width: 100px;
-    height: 100px;
-}
-main{
-    min-height: 1000px;
-    background-color: rgb(18,18,18);
-}
