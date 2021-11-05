@@ -1,10 +1,15 @@
 const written = document.getElementById('write');
 const clavier = document.getElementById('clavier');
 const navLeft = document.getElementById('navDoc-bar')
+const hide = document.getElementById('hide');
 written.addEventListener("click", () => {
 	clavier.style.display = 'block';
 	navLeft.style.display = 'none';
 });
+hide.addEventListener("click", () => {
+	clavier.style.display = 'none';
+	navLeft.style.display = 'block';
+})
 
 
 $(function(){
