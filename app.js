@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/test', (req, res) => {
+    res.render('test.html.twig', {
+        rout : req.url
+    })
+})
+
 var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8')
 app.get('/pdf', (req, res) => {
     res.render('pdf.html.twig', { 
