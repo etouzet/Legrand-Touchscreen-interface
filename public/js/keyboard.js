@@ -1,3 +1,11 @@
+const written = document.getElementById('write');
+const clavier = document.getElementById('clavier');
+const navLeft = document.getElementById('navDoc-bar')
+written.addEventListener("click", () => {
+	clavier.style.display = 'block';
+	navLeft.style.display = 'none';
+});
+
 
 $(function(){
 	var $write = $('#write'),
