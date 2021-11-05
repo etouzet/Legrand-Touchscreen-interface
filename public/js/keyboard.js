@@ -1,14 +1,13 @@
 
 $(function(){
-	var $write = $('#write'),
-		shift = false,
-		capslock = false;
+	var $write = $('#write')
 
+	//Détection du click
 	$('#keyboard li').click(function(){
 		var $this = $(this),
 			character = $this.html();
 
-		// Delete
+		//Bouton effacer un caractère
 		if ($this.hasClass('delete')) {
 			var html = $write.html();
 
@@ -16,7 +15,7 @@ $(function(){
 			return false;
 		}
 
-		// Add the character
+		//Ajouter un caractère
 		$write.html($write.html() + character);
 	});
 });

@@ -1,3 +1,5 @@
+/***********Style du clavier***********/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +15,8 @@ body {
 }
 #block-keyboard{
     background-color:RGB(30, 30, 30);
-    width : 1260px; 
-    height: 450px;
-    margin: auto;
+    width : 1260px; height: 450px; /*Taille du clavier*/
+    margin: auto; /*Centrage du clavier*/
 }
 #keyboard {
     margin: 0;
@@ -23,7 +24,7 @@ body {
     background-color: RGB(30, 30, 30);
     list-style: none;
 }
-#keyboard li {
+#keyboard li { /*Toutes les touches du clavier*/
     height: 80px;
     text-align: center;
     font-size: 25px;
@@ -31,30 +32,30 @@ body {
     color:RGB(255, 204, 64);
     border: 1px solid RGB(53, 53, 53);
 }
-#keyboard .main {
+#keyboard li:hover { /*Lorsque qu'une touche est survolé*/
+    position: relative;
+    top: 1px;
+    left: 1px;
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+#keyboard .main { /*Toutes les lettres*/
     float: left;
     margin: 0px 30px 20px 0px;
     width: 80px;
 }
-#keyboard .lastline {
+#keyboard .lastline { /*Dernière ligne du clavier*/
     margin-left: 223px;
 }
-#keyboard #hide {
+#keyboard #hide { /*Bouton cacher*/
     margin-top: 220px;
     font-size: 30px;
 }
-#keyboard .delete {
+#keyboard .delete { /*Bouton supprimer caractère*/
     font-size: 40px;
 }
 .lastitem {
     margin-right: 0;
     width: 90px;
     display: inline-block;
-}
-#keyboard li:hover {
-    position: relative;
-    top: 1px;
-    left: 1px;
-    border-color: #e5e5e5;
-    cursor: pointer;
 }

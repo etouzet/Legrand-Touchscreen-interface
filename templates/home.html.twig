@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block body %}
-
+    <!--Barre de recherche-->
     <section id="search-bar">
         <div>
             <h2>Site de gestion</h2>
@@ -36,6 +36,7 @@
         </div>
     </section>
 
+    <!--Menu des documents-->
     <section id="navDoc-bar">
         <ul>
             <div class="block-nav">
@@ -81,50 +82,49 @@
         </ul>
     </section>
 
+    <!--Clavier-->
     <section id="clavier">
-        <div id="container">
-            <div id="block-keyboard">
-                <ul id="keyboard">
-                    <li class="main">1</li>
-                    <li class="main">2</li>
-                    <li class="main">3</li>
-                    <li class="main">4</li>
-                    <li class="main">5</li>
-                    <li class="main">6</li>
-                    <li class="main">7</li>
-                    <li class="main">8</li>
-                    <li class="main">9</li>
-                    <li class="main">0</li>
-                    <li class="main">A</li>
-                    <li class="main">Z</li>
-                    <li class="main">E</li>
-                    <li class="main">R</li>
-                    <li class="main">T</li>
-                    <li class="main">Y</li>
-                    <li class="main">U</li>
-                    <li class="main">I</li>
-                    <li class="main">O</li>
-                    <li class="main">P</li>
-                    <li class="main">Q</li>
-                    <li class="main">S</li>
-                    <li class="main">D</li>
-                    <li class="main">F</li>
-                    <li class="main">G</li>
-                    <li class="main">H</li>
-                    <li class="main">J</li>
-                    <li class="main">K</li>
-                    <li class="main">L</li>
-                    <li class="main">M</li>
-                    <li class="main lastline">W</li>
-                    <li class="main ">X</li>
-                    <li class="main ">C</li>
-                    <li class="main ">V</li>
-                    <li class="main ">B</li>
-                    <li class="main ">N</li>
-                    <li class="lastitem delete"><i class="fas fa-backspace"></i></li>
-                    <li class="lastitem" id="hide"><i class="fas fa-chevron-down"></i></li>
-                </ul>
-            </div>
+        <div id="block-keyboard">
+            <ul id="keyboard">
+                <li class="main">1</li>
+                <li class="main">2</li>
+                <li class="main">3</li>
+                <li class="main">4</li>
+                <li class="main">5</li>
+                <li class="main">6</li>
+                <li class="main">7</li>
+                <li class="main">8</li>
+                <li class="main">9</li>
+                <li class="main">0</li>
+                <li class="main">A</li>
+                <li class="main">Z</li>
+                <li class="main">E</li>
+                <li class="main">R</li>
+                <li class="main">T</li>
+                <li class="main">Y</li>
+                <li class="main">U</li>
+                <li class="main">I</li>
+                <li class="main">O</li>
+                <li class="main">P</li>
+                <li class="main">Q</li>
+                <li class="main">S</li>
+                <li class="main">D</li>
+                <li class="main">F</li>
+                <li class="main">G</li>
+                <li class="main">H</li>
+                <li class="main">J</li>
+                <li class="main">K</li>
+                <li class="main">L</li>
+                <li class="main">M</li>
+                <li class="main lastline">W</li> <!--Repère pour la dernière ligne du clavier-->
+                <li class="main ">X</li>
+                <li class="main ">C</li>
+                <li class="main ">V</li>
+                <li class="main ">B</li>
+                <li class="main ">N</li>
+                <li class="lastitem delete"><i class="fas fa-backspace"></i></li> <!--Bouton supprimer un caractère-->
+                <li class="lastitem" id="hide"><i class="fas fa-chevron-down"></i></li> <!--Bouton cacher clavier-->
+            </ul>
         </div>
     </section>
     <script>
@@ -132,16 +132,17 @@
         const clavier = document.getElementById('clavier');
         const navLeft = document.getElementById('navDoc-bar');
         const hide = document.getElementById('hide');
+
+        //Afficher le clavier
         written.addEventListener("click", () => {
             clavier.style.display = 'block';
             navLeft.style.display = 'none';
         });
 
+        //Cacher le clavier
         hide.addEventListener("click", () => {
             clavier.style.display = 'none';
             navLeft.style.display = 'block';
         })
-
     </script>
-
 {% endblock %}
