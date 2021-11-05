@@ -115,16 +115,35 @@
                     <li class="main">K</li>
                     <li class="main">L</li>
                     <li class="main">M</li>
-                    <li class="main">W</li>
-                    <li class="main">X</li>
-                    <li class="main">C</li>
-                    <li class="main">V</li>
-                    <li class="main">B</li>
-                    <li class="main">N</li>
-                    <li class="delete lastitem"><i class="fas fa-backspace"></i></li>
+                    <li class="main lastline">W</li>
+                    <li class="main ">X</li>
+                    <li class="main ">C</li>
+                    <li class="main ">V</li>
+                    <li class="main ">B</li>
+                    <li class="main ">N</li>
+                    <li class="lastitem delete"><i class="fas fa-backspace"></i></li>
+                    <li class="lastitem" id="hide"><i class="fas fa-chevron-down"></i></li>
                 </ul>
             </div>
         </div>
     </section>
+
+    <script>
+        const written = document.getElementById('write');
+        const clavier = document.getElementById('clavier');
+        const navLeft = document.getElementById('navDoc-bar');
+        const hide = document.getElementById('hide');
+        written.addEventListener("click", () => {
+            clavier.style.display = 'block';
+            navLeft.style.display = 'none';
+        });
+
+        hide.addEventListener("click", () => {
+            clavier.style.display = 'none';
+            navLeft.style.display = 'block';
+        })
+
+    </script>
+
 
 {% endblock %}
