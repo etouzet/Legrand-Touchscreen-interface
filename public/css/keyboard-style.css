@@ -39,11 +39,11 @@ body {
 #keyboard .lastline {
     margin-left: 223px;
 }
-#keyboard .hide {
+#keyboard #hide {
     margin-top: 220px;
     font-size: 30px;
 }
-#keyboard .delete {
+#keyboard #delete {
     font-size: 40px;
 }
 .lastitem {

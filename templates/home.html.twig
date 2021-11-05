@@ -121,8 +121,8 @@
                     <li class="main ">V</li>
                     <li class="main ">B</li>
                     <li class="main ">N</li>
-                    <li class="delete lastitem"><i class="fas fa-backspace"></i></li>
-                    <li class="hide lastitem"><i class="fas fa-chevron-down"></i></li>
+                    <li class="lastitem" id="delete"><i class="fas fa-backspace"></i></li>
+                    <li class="lastitem" id="hide"><i class="fas fa-chevron-down"></i></li>
                 </ul>
             </div>
         </div>
@@ -130,11 +130,17 @@
     <script>
         const written = document.getElementById('write');
         const clavier = document.getElementById('clavier');
-        const navLeft = document.getElementById('navDoc-bar')
+        const navLeft = document.getElementById('navDoc-bar');
+        const hide = document.getElementById('hide');
         written.addEventListener("click", () => {
             clavier.style.display = 'block';
             navLeft.style.display = 'none';
         });
+
+        hide.addEventListener("click", () => {
+            clavier.style.display = 'none';
+            navLeft.style.display = 'block';
+        })
 
     </script>
 
