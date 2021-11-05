@@ -9,7 +9,7 @@ body {
 }
 #write {
     margin: 0 0 5px;
-    font: 1em/1.5 Verdana, Sans-Serif;
+    font: 12px Segoe UI;
     background: #fff;
     resize: none;
 }
@@ -25,19 +25,24 @@ body {
     list-style: none;
 }
 #keyboard li { /*Toutes les touches du clavier*/
-    height: 80px;
+    padding: 21px 0px;
+    /*height: 80px;*/
     text-align: center;
     font-size: 25px;
     background: RGB(18, 18, 18);
     color:RGB(255, 204, 64);
     border: 1px solid RGB(53, 53, 53);
 }
-#keyboard li:hover { /*Lorsque qu'une touche est survolé*/
+#keyboard li:hover { 
     position: relative;
-    top: 1px;
-    left: 1px;
-    border-color: #e5e5e5;
+    background: RGB(30, 30, 30);
     cursor: pointer;
+}
+#keyboard li:active { 
+    background: RGB(30, 30, 30);
+    border: 1px dashed RGB(53, 53, 53);
+    top: 2px;
+    left: 2px;
 }
 #keyboard .main { /*Toutes les lettres*/
     float: left;
@@ -48,10 +53,12 @@ body {
     margin-left: 223px;
 }
 #keyboard #hide { /*Bouton cacher*/
+    padding: 16px 0px;
     margin-top: 220px;
     font-size: 30px;
 }
 #keyboard .delete { /*Bouton supprimer caractère*/
+    padding: 10px 0px;
     font-size: 40px;
 }
 .lastitem {
