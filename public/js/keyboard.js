@@ -3,25 +3,24 @@ const clavier = document.getElementById('clavier');
 const navLeft = document.getElementById('navDoc-bar');
 const hide = document.getElementById('hide');
 
-//Afficher le clavier
-written.addEventListener("click", () => {
-    clavier.style.display = 'block';
-    navLeft.style.display = 'none';
-});
-
-//Cacher le clavier
-hide.addEventListener("click", () => {
-    clavier.style.display = 'none';
-    navLeft.style.display = 'block';
-})
-
-
 //Fonctionnement du clavier
-$(function(){
-	var $write = $('#write')
+$(function() {
+	
+	//Cacher le clavier
+	hide.addEventListener("click", () => {
+		clavier.style.display = 'none';
+		navLeft.style.display = 'block';
+	})
+
+	//Afficher le clavier
+	written.addEventListener("click", () => {
+		clavier.style.display = 'block';
+		navLeft.style.display = 'none';
+	});
 
 	//Détection du click
-	$('#keyboard li').click(function(){
+	$('#keyboard li').click(function() {
+		var $write = $('#write');
 		var $this = $(this),
 			character = $this.html();
 
