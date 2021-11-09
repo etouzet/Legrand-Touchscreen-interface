@@ -1,4 +1,10 @@
 {% extends 'base.html.twig' %}
-{% block body %}
-    <embed src="media/PetitTheoRR.pdf" type='application/pdf'/>
+
+{% block stylesheets %}
+    <link rel="stylesheet" type="text/css" href="css/home-style.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 {% endblock %}
+{% block body %}
+    <embed src="./media/PetitTheoRR.pdf" type='application/pdf'/>
+{% endblock %}
+
