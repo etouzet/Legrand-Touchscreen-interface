@@ -24,13 +24,12 @@ app.get('/test', (req, res) => {
     })
 })
 
-var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8')
+
 app.get('/pdf', (req, res) => {
-    res.render('pdf.html.twig', { 
-        'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
-    })
+    res.render('pdf.html.twig')
 })
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })
+
