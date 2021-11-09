@@ -48,12 +48,12 @@ table {
 }
 
 /******************** Custom  Code ********************/
+
 body{
     height: 940px;
     background-color: rgb(18,18,18);
 }
-/*
-.bouton:hover { 
+/*.bouton:hover { 
     position: relative;
     background: RGB(30, 30, 30);
     cursor: pointer;
@@ -64,11 +64,9 @@ body{
     top: 2px;
     left: 2px;
 }*/
-
 #nav-general>ul{
     display: flex;
 }
-
 #nav-general>ul>li{
     display: flex;
     align-items: center;

@@ -22,7 +22,7 @@ $(function() {
 	$('#keyboard li').click(function() {
 		var $write = $('#write');
 		var $this = $(this),
-			character = $this.html();
+		character = $this.html();
 
 		//Bouton effacer un caractère
 		if ($this.hasClass('delete')) {
