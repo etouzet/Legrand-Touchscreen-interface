@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="https://first-link.fr/wp-content/uploads/2020/10/legrand.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/fullscreen.js"></script>
     {% block stylesheets %}{% endblock %}
 </head>
 
@@ -15,7 +16,7 @@
             <li id="icon-home"> <i class="material-icons">home</i> </li>
             <li class="onglet-standard kb"> KB : GH01004AA </li>
             <li class="onglet-standard"> FDI : GH01004AA </li>
-
+            <li id="fullscreen" onclick="toggleFullScreen(document.body)"><i class="material-icons">fullscreen</i></li>
             {% if route == '/' %}
                 <style>
                     #icon-home{
