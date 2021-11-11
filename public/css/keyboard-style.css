@@ -26,7 +26,6 @@ body {
 }
 #keyboard li { /*Toutes les touches du clavier*/
     padding: 21px 0px;
-    /*height: 80px;*/
     text-align: center;
     font-size: 25px;
     background: RGB(18, 18, 18);

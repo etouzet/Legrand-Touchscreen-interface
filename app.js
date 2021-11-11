@@ -5,7 +5,6 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
-
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
@@ -14,16 +13,15 @@ app
     
 app.get('/', (req, res) => {
     res.render('home.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
 
 app.get('/test', (req, res) => {
     res.render('test.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
-
 
 app.get('/pdf', (req, res) => {
     res.render('pdf.html.twig')
@@ -34,4 +32,3 @@ app.get('/pdf', (req, res) => {
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })
-

@@ -11,27 +11,24 @@
 
 <body>
     <nav id="nav-general">
-        <ul>
-      
-            
+        <ul>    
             <li id="icon-home"> <i class="material-icons">home</i> </li>
             <li class="onglet-standard kb"> KB : GH01004AA </li>
             <li class="onglet-standard"> FDI : GH01004AA </li>
 
-            {% if rout == '/' %}
+            {% if route == '/' %}
                 <style>
                     #icon-home{
                         background-color: rgb(30,30,30);
                     }
                 </style>
-            {% elseif rout=='/clavier' %}
+            {% elseif route =='/clavier' %}
                 <style>
                     .kb{
                         background-color: rgb(30,30,30);
                     }
                 </style>
             {% endif %}
-
         </ul>
     </nav>
 
