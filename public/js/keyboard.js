@@ -7,15 +7,22 @@ const hide = document.getElementById('hide');
 $(function() {
 	
 	//Cacher le clavier
-	hide.addEventListener("click", () => {
-		clavier.style.display = 'none';
-		navLeft.style.display = 'block';
+	//hide.addEventListener("click", () => {
+	$("#hide").click(function(){
+		//clavier.style.display = 'none';
+		//navLeft.style.display = 'block';
+		$("#clavier").hide();
+		$("#navDoc-bar").show();
+		webkitEnterFullscreen();
 	})
 
 	//Afficher le clavier
-	written.addEventListener("click", () => {
-		clavier.style.display = 'block';
-		navLeft.style.display = 'none';
+	//written.addEventListener("click", () => {
+	$("#write").click(function(){
+		//clavier.style.display = 'block';
+		//navLeft.style.display = 'none';
+		$("#clavier").show();
+		$("#navDoc-bar").hide();
 	});
 
 	//Détection du click
