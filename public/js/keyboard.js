@@ -1,7 +1,7 @@
-const written = document.getElementById('write');
-const clavier = document.getElementById('block-keyboard');
+/*const written = document.getElementById('write');
+const clavier = document.getElementById('clavier');
 const navLeft = document.getElementById('navDoc-bar');
-const hide = document.getElementById('hide');
+const hide = document.getElementById('hide');*/
 
 //Fonctionnement du clavier
 $(function() {
