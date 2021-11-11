@@ -1,5 +1,5 @@
 const written = document.getElementById('write');
-const clavier = document.getElementById('clavier');
+const clavier = document.getElementById('block-keyboard');
 const navLeft = document.getElementById('navDoc-bar');
 const hide = document.getElementById('hide');
 
