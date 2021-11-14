@@ -5,6 +5,16 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
+
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+connection.connect(function(err) {
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
+      console.log(result); 
+    });
+  });
+//Permet de connecter la base de données et d'afficher toutes les données de dan_glb_documents
+
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
@@ -24,8 +34,9 @@ app.get('/test', (req, res) => {
 })
 
 app.get('/pdf', (req, res) => {
-    res.render('pdf.html.twig')
-    
+    res.render('pdf.html.twig',{
+        
+    })   
 })
 
 
