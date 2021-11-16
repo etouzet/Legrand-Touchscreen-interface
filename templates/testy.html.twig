@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <button>Généré un onglet</button>
+
+  
+
+    {% for resultat in resultats %}
+      <p> {% IdGlb %} </p>
+      <p> {% IdLocal_doc %} </p>
+            
+    {% endfor %}
+   
+{% endblock %}
+
+
+{% block javascripts %}
+{% endblock %}
+
+
+
+
