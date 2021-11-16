@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51ab78e6-a46d-47cb-9413-80c3c7e9e519" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/KB.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,8 @@
       <workItem from="1636109494005" duration="216000" />
       <workItem from="1636720723796" duration="1009000" />
       <workItem from="1637058626225" duration="1350000" />
-      <workItem from="1637066892167" duration="1847000" />
+      <workItem from="1637066892167" duration="2142000" />
+      <workItem from="1637085046253" duration="421000" />
     </task>
     <servers />
   </component>
