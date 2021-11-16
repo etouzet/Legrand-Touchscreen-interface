@@ -13,10 +13,10 @@
 <body>
     <nav id="nav-general">
         <ul>    
-            <li id="icon-home"> <i class="material-icons">home</i> </li>
+            <li id="icon-home"> <i class="material-icons"><a href="/">home</a></i> </li>
             <li class="onglet-standard kb"> KB : GH01004AA </li>
             <li class="onglet-standard"> FDI : GH01004AA </li>
-            <li class="onglet-standard"> FVR : GH01004AA </li>
+            <li class="onglet-standard cpp"><a href="cpp">CPP : GH01004AA</a></li>
             <li id="fullscreen" onclick="toggleFullScreen(document.body)"><i class="material-icons">fullscreen</i></li>
             {% if route == '/' %}
                 <style>
@@ -24,9 +24,18 @@
                         background-color: rgb(30,30,30);
                     }
                 </style>
-            {% elseif route =='/clavier' %}
+            {% endif %}
+            {% if route =='/clavier' %}
                 <style>
                     .kb{
+                        background-color: rgb(30,30,30);
+                    }
+                </style>
+            {% endif %}
+            {% if route =='/cpp' %}
+
+                <style>
+                    .cpp{
                         background-color: rgb(30,30,30);
                     }
                 </style>

@@ -39,6 +39,12 @@ app.get('/pdf', (req, res) => {
     })   
 })
 
+app.get('/cpp', (req, res) => {
+    res.render('cpp.html.twig',{
+        route : req.url
+    })
+})
+
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
