@@ -5,11 +5,31 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+
+app.get('/testy', (req, res) =>{
+
+    connection.query("SELECT Id_doc FROM dan_fdv_derogation_prod_doc", (err, result, fields)=> {
+        if (!err){
+            res.send(result);
+        }
+        else{
+            console.log(err);
+        }
+    });
+    connection.end();
+
+
 
 
 /*let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+=======
+/*
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+>>>>>>> 6e3dd752690aa28248f4abf59578d40daa772e34
 
-    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
 
     app.get('/testy', function (req, res) {
         var resultat =JSON.stringify(result);
@@ -23,6 +43,7 @@ app.use(express.static('public'))
 
 });
 */
+})
 
 app
     .set('views', 'templates')

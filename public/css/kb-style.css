@@ -1,0 +1,186 @@
+.kb{
+    background-color: rgb(30,30,30);
+}
+
+h2{
+    color : white;
+    margin-right: 10px;
+}
+
+/*        reference-bar       */
+
+#section-reference-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding : 1.3%;
+}
+#section-reference-bar>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+#section-reference-bar>button{
+    color: rgb(255,204,64);
+    background-color: rgb(30,30,30);
+    height: 30px;
+    width: 100px;
+}
+
+/*        reference-bar       */
+#section-title-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+#section-title-bloc>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+/*        information-bloc       */
+#section-information-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-first-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-third-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-first-column>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-second-column>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-third-column>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-information-bloc>p{
+    color: white;
+}
+
+/*        information-bloc       */
+#section-origine-destination-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-origine-bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-origine-bloc>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-destination-bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
+
+#section-destination-bloc>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgb(30,30,30);
+    margin-left: 5%;
+    margin-top: 1%;
+    padding : 1.3%;
+    width: 90%;
+}
