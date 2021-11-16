@@ -6,14 +6,23 @@ const port = 3000
 app.use(express.static('public'))
 
 
+
 let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
 
-connection.connect(function(err) {
-    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
-      console.log(result); 
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
+
+    app.get('/testy', function (req, res) {
+        var resultat =JSON.stringify(result);
+        res.send(resultat);
+        console.log(resultat);
+        res.render('testy.html.twig', {
+           
+        })
+     
     });
-  });
-//Permet de connecter la base de données et d'afficher toutes les données de dan_glb_documents
+
+});
+
 
 app
     .set('views', 'templates')
@@ -39,11 +48,26 @@ app.get('/pdf', (req, res) => {
     })   
 })
 
+app.get('/cpp', (req, res) => {
+    res.render('cpp.html.twig',{
+        route : req.url
+    })
+})
+
+
+app.get('/implantometre', (req, res) => {
+    res.render('implantometre.html.twig', {
+        route : req.url
+    })
+})
+
+
 app.get('/KB', (req, res) => {
     res.render('KB.html.twig',{
 
     })
 })
+
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
