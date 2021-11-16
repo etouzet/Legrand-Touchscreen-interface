@@ -6,9 +6,8 @@
   
 
     {% for resultat in resultats %}
-      <p> {% IdGlb %} </p>
-      <p> {% IdLocal_doc %} </p>
-            
+      <p> {{ resultat.IdGlb }}  </p>
+      <p> {{ resultat.IdLocal_doc }} </p>
     {% endfor %}
    
 {% endblock %}

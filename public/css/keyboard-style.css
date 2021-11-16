@@ -28,7 +28,7 @@
     background: RGB(18, 18, 18);
     color:RGB(255, 204, 64);
     border: 1px solid RGB(53, 53, 53);
-}
+}/*
 #keyboard li:hover { 
     position: relative;
     background: RGB(30, 30, 30);
@@ -39,7 +39,7 @@
     border: 1px dashed RGB(53, 53, 53);
     top: 2px;
     left: 2px;
-}
+}*/
 #keyboard .main { /*Toutes les lettres*/
     float: left;
     margin: 0px 30px 20px 0px;
