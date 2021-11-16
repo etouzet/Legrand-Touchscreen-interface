@@ -1,27 +1,31 @@
 const written = document.getElementById('write');
 const clavier = document.getElementById('clavier');
-const navLeft = document.getElementById('navDoc-bar')
+const navLeft = document.getElementById('navDoc-bar');
 const hide = document.getElementById('hide');
+
+//Afficher le clavier
 written.addEventListener("click", () => {
-	clavier.style.display = 'block';
-	navLeft.style.display = 'none';
+    clavier.style.display = 'block';
+    navLeft.style.display = 'none';
 });
+
+//Cacher le clavier
 hide.addEventListener("click", () => {
-	clavier.style.display = 'none';
-	navLeft.style.display = 'block';
+    clavier.style.display = 'none';
+    navLeft.style.display = 'block';
 })
 
 
+//Fonctionnement du clavier
 $(function(){
-	var $write = $('#write'),
-		shift = false,
-		capslock = false;
+	var $write = $('#write')
 
+	//Détection du click
 	$('#keyboard li').click(function(){
 		var $this = $(this),
 			character = $this.html();
 
-		// Delete
+		//Bouton effacer un caractère
 		if ($this.hasClass('delete')) {
 			var html = $write.html();
 
@@ -29,9 +33,7 @@ $(function(){
 			return false;
 		}
 
-		// Add the character
+		//Ajouter un caractère
 		$write.html($write.html() + character);
 	});
 });
-
-

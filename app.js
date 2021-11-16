@@ -31,18 +31,6 @@ app.get('/pdf', (req, res) => {
     })
 })
 
-app.get('/clavier', (req, res) => {
-    res.render('clavier.html.twig', {
-        rout : req.url
-    })
-})
-
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
 })
-
-
-
-
-
-
