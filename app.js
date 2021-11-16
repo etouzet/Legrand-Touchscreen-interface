@@ -39,6 +39,12 @@ app.get('/pdf', (req, res) => {
     })   
 })
 
+app.get('/implantometre', (req, res) => {
+    res.render('implantometre.html.twig', {
+        route : req.url
+    })
+})
+
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
