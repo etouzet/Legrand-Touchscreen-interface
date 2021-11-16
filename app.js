@@ -39,6 +39,11 @@ app.get('/pdf', (req, res) => {
     })   
 })
 
+app.get('/KB', (req, res) => {
+    res.render('KB.html.twig',{
+
+    })
+})
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
