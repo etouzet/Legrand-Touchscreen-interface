@@ -89,6 +89,7 @@ table {
     font-style: normal;
 }
 body{
+    font: 71%/1.5 Verdana, Sans-Serif;
     height: 940px;
     background-color: rgb(18,18,18);
     font-family: 'Segoe UI';
@@ -131,5 +132,11 @@ body{
 
 embed{
     width: 1000px;
-
+    height: 500px;
 }
+
+a
+{ 
+ text-decoration:none; 
+ color:white;
+} 

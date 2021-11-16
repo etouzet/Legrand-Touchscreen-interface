@@ -5,6 +5,25 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
+
+
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
+
+    app.get('/testy', function (req, res) {
+        var resultat =JSON.stringify(result);
+        res.send(resultat);
+        console.log(resultat);
+        res.render('testy.html.twig', {
+           
+        })
+     
+    });
+
+});
+
+
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
@@ -24,8 +43,29 @@ app.get('/test', (req, res) => {
 })
 
 app.get('/pdf', (req, res) => {
-    res.render('pdf.html.twig')
-    
+    res.render('pdf.html.twig',{
+        
+    })   
+})
+
+app.get('/cpp', (req, res) => {
+    res.render('cpp.html.twig',{
+        route : req.url
+    })
+})
+
+
+app.get('/implantometre', (req, res) => {
+    res.render('implantometre.html.twig', {
+        route : req.url
+    })
+})
+
+
+app.get('/KB', (req, res) => {
+    res.render('KB.html.twig',{
+
+    })
 })
 
 
