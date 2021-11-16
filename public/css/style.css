@@ -48,15 +48,25 @@ table {
 }
 
 /******************** Custom  Code ********************/
+
 body{
     height: 940px;
     background-color: rgb(18,18,18);
 }
-
+/*.bouton:hover { 
+    position: relative;
+    background: RGB(30, 30, 30);
+    cursor: pointer;
+}
+.bouton:active { 
+    background: RGB(30, 30, 30);
+    border: 1px dashed RGB(53, 53, 53);
+    top: 2px;
+    left: 2px;
+}*/
 #nav-general>ul{
     display: flex;
 }
-
 #nav-general>ul>li{
     display: flex;
     align-items: center;
@@ -68,6 +78,14 @@ body{
     width: 12%;
 
 }
+#fullscreen:hover{
+    cursor: pointer;
+}
 #icon-home{
     width: 8%;
+}
+
+embed{
+    width: 1000px;
+    height: 500px;
 }

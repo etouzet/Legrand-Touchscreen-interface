@@ -6,6 +6,15 @@ const port = 3000
 app.use(express.static('public'))
 
 
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+connection.connect(function(err) {
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
+      console.log(result); 
+    });
+  });
+//Permet de connecter la base de données et d'afficher toutes les données de dan_glb_documents
+
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
@@ -14,22 +23,22 @@ app
     
 app.get('/', (req, res) => {
     res.render('home.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
 
 app.get('/test', (req, res) => {
     res.render('test.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
 
-var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8')
 app.get('/pdf', (req, res) => {
-    res.render('pdf.html.twig', { 
-        'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
-    })
+    res.render('pdf.html.twig',{
+        
+    })   
 })
+
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)
