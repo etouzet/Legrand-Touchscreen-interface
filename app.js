@@ -6,6 +6,24 @@ const port = 3000
 app.use(express.static('public'))
 
 
+
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
+
+    app.get('/testy', function (req, res) {
+        var resultat =JSON.stringify(result);
+        res.send(resultat);
+        console.log(resultat);
+        res.render('testy.html.twig', {
+           
+        })
+     
+    });
+
+});
+
+
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
@@ -14,22 +32,42 @@ app
     
 app.get('/', (req, res) => {
     res.render('home.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
 
 app.get('/test', (req, res) => {
     res.render('test.html.twig', {
-        rout : req.url
+        route : req.url
     })
 })
 
-var data =fs.readFileSync('./public/media/PetitTheoRR#4.pdf','utf8')
 app.get('/pdf', (req, res) => {
-    res.render('pdf.html.twig', { 
-        'num' : res.sendFile(__dirname + "/public/media/PetitTheoRR#4.pdf")
+    res.render('pdf.html.twig',{
+        
+    })   
+})
+
+app.get('/cpp', (req, res) => {
+    res.render('cpp.html.twig',{
+        route : req.url
     })
 })
+
+
+app.get('/implantometre', (req, res) => {
+    res.render('implantometre.html.twig', {
+        route : req.url
+    })
+})
+
+
+app.get('/KB', (req, res) => {
+    res.render('KB.html.twig',{
+
+    })
+})
+
 
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`)

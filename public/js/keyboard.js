@@ -1,39 +1,39 @@
-const written = document.getElementById('write');
-const clavier = document.getElementById('clavier');
-const navLeft = document.getElementById('navDoc-bar');
-const hide = document.getElementById('hide');
-
-//Afficher le clavier
-written.addEventListener("click", () => {
-    clavier.style.display = 'block';
-    navLeft.style.display = 'none';
-});
-
-//Cacher le clavier
-hide.addEventListener("click", () => {
-    clavier.style.display = 'none';
-    navLeft.style.display = 'block';
-})
-
+const write = $("#write"); 					//zone de texte
+const keyboard = $("#section-keyboard");	//clavier
+const navLeft = $("#section-navDoc-bar");	//menu de navigation gauche
+const hide = $("#hide");					//bouton cacher clavier
+const keyboardButton = $('#keyboard li');	//tous les boutons du clavier
 
 //Fonctionnement du clavier
-$(function(){
-	var $write = $('#write')
+$(function() {
+	
+	//Cacher le clavier
+	hide.click(function(){
+		keyboard.hide();
+		navLeft.show();
+		webkitEnterFullscreen();
+	})
+
+	//Afficher le clavier
+	write.click(function(){
+		keyboard.show();
+		navLeft.hide();
+	});
 
 	//Détection du click
-	$('#keyboard li').click(function(){
+	keyboardButton.click(function() {
 		var $this = $(this),
-			character = $this.html();
+		character = $this.html();
 
 		//Bouton effacer un caractère
 		if ($this.hasClass('delete')) {
-			var html = $write.html();
+			var html = write.html();
 
-			$write.html(html.substr(0, html.length - 1));
+			write.html(html.substr(0, html.length - 1));
 			return false;
 		}
 
 		//Ajouter un caractère
-		$write.html($write.html() + character);
+		write.html(write.html() + character);
 	});
 });

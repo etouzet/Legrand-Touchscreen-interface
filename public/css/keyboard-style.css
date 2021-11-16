@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
 }
-body {
-    font: 71%/1.5 Verdana, Sans-Serif;
-}
 #write {
     margin: 0 0 5px;
     font: 12px Segoe UI;
@@ -26,13 +23,12 @@ body {
 }
 #keyboard li { /*Toutes les touches du clavier*/
     padding: 21px 0px;
-    /*height: 80px;*/
     text-align: center;
     font-size: 25px;
     background: RGB(18, 18, 18);
     color:RGB(255, 204, 64);
     border: 1px solid RGB(53, 53, 53);
-}
+}/*
 #keyboard li:hover { 
     position: relative;
     background: RGB(30, 30, 30);
@@ -43,7 +39,7 @@ body {
     border: 1px dashed RGB(53, 53, 53);
     top: 2px;
     left: 2px;
-}
+}*/
 #keyboard .main { /*Toutes les lettres*/
     float: left;
     margin: 0px 30px 20px 0px;
