@@ -6,10 +6,10 @@ const port = 3000
 app.use(express.static('public'))
 
 
-
+/*
 let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
 
-    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
 
     app.get('/testy', function (req, res) {
         var resultat =JSON.stringify(result);
@@ -22,7 +22,7 @@ let connection = require('./public/config/databases.js'); //Dit que nous avons b
     });
 
 });
-
+*/
 
 app
     .set('views', 'templates')
