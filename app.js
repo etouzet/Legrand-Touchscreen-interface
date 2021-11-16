@@ -4,6 +4,7 @@ const twig = require("twig");
 const app = express()
 const port = 3000
 app.use(express.static('public'))
+<<<<<<< HEAD
 let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
 
 
@@ -18,6 +19,27 @@ app.get('/testy', (req, res) =>{
         }
     });
     connection.end();
+=======
+
+
+/*
+let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+
+    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
+
+    app.get('/testy', function (req, res) {
+        var resultat =JSON.stringify(result);
+        res.send(resultat);
+        console.log(resultat);
+        res.render('testy.html.twig', {
+           
+        })
+     
+    });
+
+});
+*/
+>>>>>>> 00bebf78b497a87b3f8af4546ad99456da665ae9
 
 })
 app
