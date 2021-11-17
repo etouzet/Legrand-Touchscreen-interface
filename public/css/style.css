@@ -76,14 +76,18 @@ body{
     height: 80px;
 }
 .onglet-standard{
-    width: 12%;
+    width: 13%;
+}
+.onglet-standard:hover{
+    background-color: RGB(30,30,30);
 }
 #fullscreen{
     font-size: 30px;
-    margin: 0px 45px;
+    padding: 0px 40px;
 }
 #fullscreen:hover{
     cursor: pointer;
+    background-color: RGB(30,30,30);
 }
 #icon-home{
     width: 7%;
