@@ -9,7 +9,6 @@ let connection = require('./public/config/databases.js'); //Dit que nous avons b
 
 
 app.get('/testy', (req, res) =>{
-
     connection.query("SELECT Id_doc FROM dan_fdv_derogation_prod_doc", (err, result, fields)=> {
         if (!err){
             res.send(result);
@@ -54,6 +53,12 @@ app.get('/cpp', (req, res) => {
 
 app.get('/implantometre', (req, res) => {
     res.render('implantometre.html.twig', {
+        route : req.url
+    })
+})
+
+app.get('/fichetechique/designation', (req, res) => {
+    res.render('fiche technique/designation.html.twig', {
         route : req.url
     })
 })

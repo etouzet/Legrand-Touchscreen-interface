@@ -10,8 +10,10 @@ h1 {
 }
 
 button {
-    background-color: black;
-    color: yellow;
+    color: rgb(255, 204, 64);
+    background-color: rgb(30,30,30);
+    padding:15px;
+
 }
 
 #section-bar{
