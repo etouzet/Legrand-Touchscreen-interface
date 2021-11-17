@@ -52,7 +52,7 @@ table {
 body{
     height: 940px;
     background-color: rgb(18,18,18);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
 }
 .bouton:hover { 
     position: relative;
@@ -80,6 +80,7 @@ body{
 }
 #fullscreen{
     font-size: 30px;
+    margin: 0px 45px;
 }
 #fullscreen:hover{
     cursor: pointer;
@@ -96,6 +97,6 @@ embed{
 
 a
 { 
- text-decoration:none; 
- color:white;
+    text-decoration:none; 
+    color:white;
 } 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(30,30,30);
+    border-top: 5px solid rgb(30,30,30);
     padding : 1.3%;
 }
 #section-search-bar>div{
@@ -11,7 +11,57 @@
     align-items: center;
 }
 
-h2{
-    color : white;
+#section-search-bar h2{
     margin-right: 10px;
+    color:rgb(158,158,158)
+}
+
+#fermer{
+    color: rgb(255, 204, 64);
+    background-color: rgb(30,30,30);
+    padding:15px;
+}
+
+#piece div, #regroupement div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(255,255,255);
+    background-color: rgb(30,30,30);
+    padding:20px;
+    margin:30px;
+}
+
+#piece span, #regroupement span{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#piece span .champs, #regroupement span .champs{
+    background-color: rgb(18,18,18);
+    padding:5px;
+    margin-left:5px;
+    color:rgb(158,158,158);
+}
+
+.champs-bar{
+    padding:10px;
+    background-color:rgb(30,30,30);
+}
+
+#principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(30,30,30);
+    margin:30px;
+}
+
+#principal div{
+    display: flex;
+    flex-direction: column;
+    color:rgb(255,255,255);
+    padding:20px;
+    width: 33%;
 }

@@ -1,6 +1,6 @@
 const write = $("#write"); 					//zone de texte
 const keyboard = $("#section-keyboard");	//clavier
-const navLeft = $("#section-navDoc-bar");	//menu de navigation gauche
+const mainContent = $("#main-content");	//menu de navigation gauche
 const hide = $("#hide");					//bouton cacher clavier
 const keyboardButton = $('#keyboard li');	//tous les boutons du clavier
 
@@ -10,14 +10,14 @@ $(function() {
 	//Cacher le clavier
 	hide.click(function(){
 		keyboard.hide();
-		navLeft.show();
+		mainContent.show();
 		webkitEnterFullscreen();
 	})
 
 	//Afficher le clavier
 	write.click(function(){
 		keyboard.show();
-		navLeft.hide();
+		mainContent.hide();
 	});
 
 	//Détection du click
