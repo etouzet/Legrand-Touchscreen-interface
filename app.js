@@ -9,7 +9,6 @@ let connection = require('./public/config/databases.js'); //Dit que nous avons b
 
 
 app.get('/testy', (req, res) =>{
-
     connection.query("SELECT Id_doc FROM dan_fdv_derogation_prod_doc", (err, result, fields)=> {
         if (!err){
             res.send(result);

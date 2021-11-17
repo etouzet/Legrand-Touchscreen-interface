@@ -81,9 +81,6 @@ body{
 .onglet-standard:hover{
     background-color: RGB(30,30,30);
 }
-#minscreen{
-    display: none;
-}
 #fullscreen{
     font-size: 30px;
     padding: 0px 40px;

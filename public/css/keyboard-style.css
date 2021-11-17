@@ -50,11 +50,11 @@
 }
 #keyboard #hide { /*Bouton cacher*/
     padding: 16px 0px;
-    margin-top: 220px;
+    margin-top: 200px;
     font-size: 30px;
 }
 #keyboard .delete { /*Bouton supprimer caractère*/
-    padding: 10px 0px;
+    padding: 13px 0px;
     font-size: 40px;
 }
 .lastitem {
