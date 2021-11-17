@@ -12,7 +12,7 @@
 }
 #block-keyboard{
     background-color:RGB(30, 30, 30);
-    width : 1260px; height: 450px; /*Taille du clavier*/
+    width : 1260px; height: 380px; /*Taille du clavier*/
     margin: auto; /*Centrage du clavier*/
 }
 #keyboard {
@@ -49,12 +49,14 @@
     margin-left: 223px;
 }
 #keyboard #hide { /*Bouton cacher*/
-    padding: 16px 0px;
+    padding: 19px 0px;
+    margin-left: 12px;
     margin-top: 200px;
     font-size: 30px;
 }
 #keyboard .delete { /*Bouton supprimer caractère*/
     padding: 13px 0px;
+    margin-left: 12px;
     font-size: 40px;
 }
 .lastitem {
