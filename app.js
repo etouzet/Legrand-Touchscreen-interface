@@ -7,7 +7,7 @@ app.use(express.static('public'))
 
 
 
-let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+/*let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
 
     connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
 
@@ -21,7 +21,7 @@ let connection = require('./public/config/databases.js'); //Dit que nous avons b
      
     });
 
-});
+});*/
 
 
 app
