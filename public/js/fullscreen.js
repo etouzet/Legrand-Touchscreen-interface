@@ -1,26 +1,3 @@
-const fullscreen = document.getElementById("fullscreen");
-//const minscreen = $("#minscreen");
-const repereFullscreen = document.getElementById("repereFullscreen");
-
-/*$(function(){
-    fullscreen.click(function(){
-        if (repereFullscreen.hasClass("fa-expand")){
-            repereFullscreen.removeClass("fa-expand");
-            repereFullscreen.addClass("fa-compress");
-        } else {
-            repereFullscreen.removeClass("fa-compress");
-            repereFullscreen.addClass("fa-expand");
-        }
-        fullscreen.hide();
-        minscreen.show();
-    });
-
-    minscreen.click(function(){
-        minscreen.hide();
-        fullscreen.show();
-    })
-});*/
-
 function toggleFullScreen(elem) {
     if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
         if (elem.requestFullScreen) {
@@ -43,11 +20,12 @@ function toggleFullScreen(elem) {
             document.msExitFullscreen();
         }
     }
-    if (repereFullscreen.classList.contains("fa-expand")){
-            repereFullscreen.classList.remove("fa-expand");
-            repereFullscreen.classList.add("fa-compress");
-        } else {
-            repereFullscreen.classList.remove("fa-compress");
-            repereFullscreen.classList.add("fa-expand");
-        }
+    //Condition pour changer le bouton affiché en fonction de l'état du plein écran
+    if (document.getElementById("repereFullscreen").classList.contains("fa-expand")){
+        document.getElementById("repereFullscreen").classList.remove("fa-expand");
+        document.getElementById("repereFullscreen").classList.add("fa-compress");
+    } else {
+        document.getElementById("repereFullscreen").classList.remove("fa-compress");
+        document.getElementById("repereFullscreen").classList.add("fa-expand");
+    }
 }
