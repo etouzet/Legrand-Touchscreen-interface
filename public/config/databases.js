@@ -8,5 +8,4 @@ let connection = mysql.createConnection({
  
 connection.connect();
  
-module.exports=connection
- 
+module.exports=connection;
