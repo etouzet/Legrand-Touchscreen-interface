@@ -5,24 +5,21 @@ const app = express()
 const port = 3000
 app.use(express.static('public'))
 
-
-
 let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
 
-    connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) { 
 
-    app.get('/testy', function (req, res) {
-        var resultat =JSON.stringify(result);
-        res.send(resultat);
-        console.log(resultat);
-        res.render('testy.html.twig', {
-           
-        })
-     
+app.get('/testy', (req, res) =>{
+
+    connection.query("SELECT Id_doc FROM dan_fdv_derogation_prod_doc", (err, result, fields)=> {
+        if (!err){
+            res.send(result);
+        }
+        else{
+            console.log(err);
+        }
     });
-
-});
-
+    connection.end();
+})
 
 app
     .set('views', 'templates')

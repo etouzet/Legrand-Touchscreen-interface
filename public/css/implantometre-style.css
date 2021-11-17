@@ -1,21 +1,59 @@
-body {
-    background-color: grey;
+h2{
+    color : white;
+    margin-right: 10px;
 }
 
-#section-search-bar{
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+button {
+    background-color: black;
+    color: yellow;
+}
+
+#bar-grey {
+    background-color: rgb(30,30,30);
+    height: 5px;
+}
+
+#section-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding : 1.3%;
-    background-color: black;
+    background-color: rgb(18,18,18);
 }
-#section-search-bar>div{
+#section-bar>div{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-h2{
-    color : white;
-    margin-right: 10px;
+
+
+#corp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+#block-info {
+    margin: 20px;
+    width: 40%;
+    background-color: rgb(30,30,30);
+    height: 500px;
+}
+
+#pdf {
+    margin: 20px;
+    width: 40%;
+}
+
+embed {
+    width: 100%;
+}
+

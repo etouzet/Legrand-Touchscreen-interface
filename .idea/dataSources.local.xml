@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PS-212.5284.49">
+    <data-source name="legrand" uuid="aa741253-d4e1-46a1-a9e2-8b876828b187">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>legrand</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="@localhost" uuid="7f2ffc1f-a84a-4838-920d-b91c0678ca72">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
