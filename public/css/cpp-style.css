@@ -20,6 +20,16 @@
     color: rgb(255, 204, 64);
     background-color: rgb(30,30,30);
     padding:15px;
+    border: 1px solid rgb(30,30,30);
+
+}
+  
+#fermer:active {
+background: rgb(18,18,18);
+-webkit-box-shadow: inset 0px 0px 2px rgb(30,30,30);
+    -moz-box-shadow: inset 0px 0px 2px rgb(30,30,30);
+        box-shadow: inset 0px 0px 2px rgb(30,30,30);
+    outline: none;
 }
 
 #piece div, #regroupement div{
