@@ -85,6 +85,7 @@ h3{
 /*        keyboard       */
 #section-keyboard{
     display: none;
+    padding-top: 20px;
 }
 
 #loupe{
