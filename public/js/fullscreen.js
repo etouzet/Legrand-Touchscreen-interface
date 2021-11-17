@@ -1,3 +1,11 @@
+const fullscreen = $("#fullscreen");
+
+fullscreen.click(function(){
+    if (document.fullscreenElement){
+        
+    }
+})
+
 function toggleFullScreen(elem) {
     if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
         if (elem.requestFullScreen) {
