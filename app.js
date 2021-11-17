@@ -58,6 +58,12 @@ app.get('/implantometre', (req, res) => {
     })
 })
 
+app.get('/fichetechique/designation', (req, res) => {
+    res.render('fiche technique/designation.html.twig', {
+        route : req.url
+    })
+})
+
 
 app.get('/KB', (req, res) => {
     res.render('KB.html.twig',{
