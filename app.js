@@ -22,8 +22,12 @@ app.get('/testy', (req, res) =>{
 
 
 
+
+/*let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+=======
 /*
 let connection = require('./public/config/databases.js'); //Dit que nous avons besoin de databases.js qui contient la BDD
+>>>>>>> 6e3dd752690aa28248f4abf59578d40daa772e34
 
     connection.query("SELECT * FROM dan_glb_documents", function (err, result, fields) {
 
@@ -39,8 +43,8 @@ let connection = require('./public/config/databases.js'); //Dit que nous avons b
 
 });
 */
-
 })
+
 app
     .set('views', 'templates')
     .set('twig options', { autoescape: true })
