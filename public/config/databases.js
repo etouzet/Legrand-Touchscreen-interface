@@ -6,6 +6,7 @@ var connection = mysql.createConnection({
   database : 'legrand',
   multipleStatements : true
 });
+
 connection.connect((err)=>{
   if(!err){
     console.log("Connected");
@@ -15,4 +16,4 @@ connection.connect((err)=>{
   }
 });
 module.exports = connection;
- 
+
